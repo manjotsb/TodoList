@@ -1,12 +1,12 @@
 import React from "react";
-import {View} from 'react-native';
+import {View, Text} from 'react-native';
 
 export default function ToDoList({tasks}) {
     return(
-        <ul>
+        <View>
             {tasks.map((tasks, index) => (
-                <li key={index}>{tasks}</li>
+                <Text key={index}>{tasks}</Text>
             ))}
-        </ul>
+        </View>
     );
 }
